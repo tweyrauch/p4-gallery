@@ -7,7 +7,7 @@
  <link rel="icon" href="favicon.ico">	
  
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/gridpak.css">
   <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>				
   <link rel="stylesheet" href="css/styles.css">	
@@ -16,14 +16,14 @@
 <body>
 	
 	<header>
-		<div class="container">
-			<object data="img/logo.svg" type="image/svg+xml" class="logo">
+		<div class="row container ">
+			<object data="img/logo.svg" type="image/svg+xml" class="logo col span_2">
 				<a href="img/logo.svg">
 					<img src="img/logo.png">
 				</a>
 			</object>
-			<h1>Image Gallery</h1>
-			<nav>
+			<h1 class="col span_6">Image Gallery</h1>
+			<nav class="col span_4">
 				<ul>
 					<li><a href="http://tweyrauch.github.io/">Home</a></li>
 					<li><a href="http://tweyrauch.github.io/p1-bio/">About</a></li>
@@ -37,7 +37,7 @@
 	<div class="container">
 		
 		<!-- Your Content -->
-		<div id="captioned-gallery">
+	<!-- 	<div id="captioned-gallery">
   
  <div class="arrow left"><h1> &#8672;</h1></div>
   <figure class="slider">
@@ -67,92 +67,119 @@
 			<figcaption></figcaption>
 		</figure>
  
-	</figure> <div class="arrow right"><h1>&#8674;</h1></div>
+	</figure> <div class="arrow right"><h1>&#8674;</h1></div> -->
  
-</div>
+<!-- </div> -->
+
+<aside class="col span_2">
+	<p></p>
+		
+</aside><div class="sections"><div class="markers span_2">
+			<ul>
+				<li><a href="#drawings">Drawings</a></li>
+				<li><a href="#photo">Photographs</a></li>
+			</ul>
+		</div></div>
+
+<article class="col span_10">
+
+	<section >
+		<h2 id="drawings" class="col span_12">Drawings</h2>
+		<ul class="lb-album col span_12">
+			<li> 
+		        <a href="#draw-1">
+		            <img src="img/thumbs/draw-1.jpg" alt="image05">
+		        </a>
+		        <div class="lb-overlay" id="draw-1">
+		            <img src="img/full/draw-1.jpg" alt="drawing-1" class="landscape"/>
+		            <div>
+		                <a href="#draw-5" class="lb-prev">&#8672;</a>
+		                <a href="#draw-2" class="lb-next">&#8674;</a>
+		            </div>
+		            <a href="#page" class="lb-close">x Close</a>
+		        </div>
+		    </li>
+		</ul>
+	</section>
+
+	<section  class="row">
+		<h2 id="photo" class="col span_12">Photographs</h2>
+		<ul class="lb-album col span_12">
+			<li>
+		        <a href="#image-1">
+		            <img src="img/thumbs/1.jpg" alt="image01">
+		        </a>
+		        <div class="lb-overlay" id="image-1">
+		        	
+		            <img src="img/full/1.jpg" alt="image01" class="portrait"/>
+		            
+		            <div>
+		               <a href="#image-6" class="lb-prev">&#8672;</a> 
+		                <a href="#image-2" class="lb-next">&#8674;</a>
+		            </div>
+		            <a href="#page" class="lb-close">x</a>
+		        </div>
+		    </li>
+		    <li> 
+		        <a href="#image-2">
+		            <img src="img/thumbs/2.jpg" alt="image02">
+		        </a>
+		        <div class="lb-overlay" id="image-2">
+		            	
+		            	<img src="img/full/2.jpg" alt="image02" class="landscape"/>
+		             <div>
+		        		<a href="#image-1" class="lb-prev">&#8672;</a>
+		                <a href="#image-3" class="lb-next">&#8674;</a>
+		            </div>
+		            <a href="#page" class="lb-close">x Close</a>
+		        </div>
+		    </li>
+		    <li> 
+		        <a href="#image-3">
+		            <img src="img/thumbs/3.jpg" alt="image03">
+		        </a>
+		        <div class="lb-overlay" id="image-3">
+		            <img src="img/full/3.jpg" alt="image03" class="landscape"/>
+		            <div>
+		                <a href="#image-2" class="lb-prev">&#8672;</a>
+		                <a href="#image-4" class="lb-next">&#8674;</a>
+		            </div>
+		            <a href="#page" class="lb-close">x Close</a>
+		        </div>
+		    </li>
+		    <li> 
+		        <a href="#image-4">
+		            <img src="img/thumbs/4.jpg" alt="image04">
+		        </a>
+		        <div class="lb-overlay" id="image-4">
+		            <img src="img/full/4.jpg" alt="image04" class="landscape"/>
+		            <div>
+		                <a href="#image-3" class="lb-prev">&#8672;</a>
+		                <a href="#image-5" class="lb-next">&#8674;</a>
+		            </div>
+		            <a href="#page" class="lb-close">x Close</a>
+		        </div>
+		    </li>
+		    
+		    <li> 
+		        <a href="#image-5">
+		            <img src="img/thumbs/6.jpg" alt="image05">
+		        </a>
+		        <div class="lb-overlay" id="image-5">
+		            <img src="img/full/6.jpg" alt="image05" class="portrait"/>
+		            <div>
+		                <a href="#image-4" class="lb-prev">&#8672;</a>
+		                <a href="#image-1" class="lb-next">&#8674;</a>
+		            </div>
+		            <a href="#page" class="lb-close">x Close</a>
+		        </div>
+		    </li>
+		</ul>
+	</section>
+</article>
 		
 <ul class="lb-album">
-    <li>
-        <a href="#image-1">
-            <img src="img/thumbs/1.jpg" alt="image01">
-        </a>
-        <div class="lb-overlay" id="image-1">
-        	
-            <img src="img/full/1.jpg" alt="image01" class="portrait"/>
-            
-            <div>
-               <a href="#image-6" class="lb-prev">&#8672;</a> 
-                <a href="#image-2" class="lb-next">&#8674;</a>
-            </div>
-            <a href="#page" class="lb-close">x</a>
-        </div>
-    </li>
-    <li> 
-        <a href="#image-2">
-            <img src="img/thumbs/2.jpg" alt="image02">
-        </a>
-        <div class="lb-overlay" id="image-2">
-            	
-            	<img src="img/full/2.jpg" alt="image02" class="landscape"/>
-             <div>
-        		<a href="#image-1" class="lb-prev">&#8672;</a>
-                <a href="#image-3" class="lb-next">&#8674;</a>
-            </div>
-            <a href="#page" class="lb-close">x Close</a>
-        </div>
-    </li>
-    <li> 
-        <a href="#image-3">
-            <img src="img/thumbs/3.jpg" alt="image03">
-        </a>
-        <div class="lb-overlay" id="image-3">
-            <img src="img/full/3.jpg" alt="image03" class="landscape"/>
-            <div>
-                <a href="#image-2" class="lb-prev">&#8672;</a>
-                <a href="#image-4" class="lb-next">&#8674;</a>
-            </div>
-            <a href="#page" class="lb-close">x Close</a>
-        </div>
-    </li>
-    <li> 
-        <a href="#image-4">
-            <img src="img/thumbs/4.jpg" alt="image04">
-        </a>
-        <div class="lb-overlay" id="image-4">
-            <img src="img/full/4.jpg" alt="image04" class="landscape"/>
-            <div>
-                <a href="#image-3" class="lb-prev">&#8672;</a>
-                <a href="#image-5" class="lb-next">&#8674;</a>
-            </div>
-            <a href="#page" class="lb-close">x Close</a>
-        </div>
-    </li>
-    <li> 
-        <a href="#image-5">
-            <img src="img/thumbs/5.jpg" alt="image05">
-        </a>
-        <div class="lb-overlay" id="image-5">
-            <img src="img/full/5.jpg" alt="image05" class="landscape"/>
-            <div>
-                <a href="#image-4" class="lb-prev">&#8672;</a>
-                <a href="#image-6" class="lb-next">&#8674;</a>
-            </div>
-            <a href="#page" class="lb-close">x Close</a>
-        </div>
-    </li>
-    <li> 
-        <a href="#image-6">
-            <img src="img/thumbs/6.jpg" alt="image06">
-        </a>
-        <div class="lb-overlay" id="image-6">
-            <img src="img/full/6.jpg" alt="image06" class="portrait"/>
-            <div>
-                <a href="#image-5" class="lb-prev">&#8672;</a>
-                <a href="#image-1" class="lb-next">&#8674;</a>
-            </div>
-            <a href="#page" class="lb-close">x Close</a>
-        </div>
-    </li>
+    
 </ul>
 
 
