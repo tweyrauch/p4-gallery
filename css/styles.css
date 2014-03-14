@@ -175,15 +175,40 @@ nav a:active{
     margin: 2%;
     position: relative;
 }
-.lb-album li > a,
-.lb-album li > a img{
+.lb-album li > a/*,
+.lb-album li > a img*/{
     display: block;
 }
 .lb-album li > a{
-    width: 150px;
-    height: 150px;
+	background: url("../img/thumbs/sprite1.jpg") no-repeat;
+    width: 100px;
+    height: 100px;
     position: relative;
     border: 5px solid #3E5866;
+}
+
+.photos li:nth-child(1) a {
+   background-position: 0 0;
+}
+
+.photos li:nth-child(2) a {
+   background-position: -100px 0;
+}
+
+.photos li:nth-child(3) a {
+   background-position: -200px 0;
+}
+
+.photos li:nth-child(4) a {
+   background-position: -300px 0;
+}
+
+.photos li:nth-child(5) a {
+   background-position: -400px 0;
+}
+
+.draw li:nth-child(1) a {
+   background-position: 0 -100px;
 }
 
 .lb-overlay{
