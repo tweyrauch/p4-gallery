@@ -167,8 +167,7 @@ nav a:active{
     border: 5px solid #3E5866;
 }
 
-.lb-overlay,
-.gallery{
+.lb-overlay{
    /* width: 0px;
     height: 0px;*/
     width: 100%;
@@ -183,8 +182,7 @@ nav a:active{
 }
 
 
-.lb-overlay a.lb-close,
-.gallery a.lb-close{
+.lb-overlay a.lb-close{
     background: rgba(255, 235, 209, .8);
     z-index: 1001;
     position: absolute;
@@ -286,15 +284,23 @@ nav a:active{
 .arrow{
   background: grey;
   height: 100%;
-  width: 2em;
+  width: 5%;
   opacity:.7;
+  padding: 0;
   position: absolute;
   top:0;
 }
 
 .arrow h1{
-  position:absolute;
-  bottom:50%;
+	margin: 0;
+  padding: 0;
+  position: absolute;;
+  bottom: 35%;
+
+
+  text-align: center;
+
+  
 }
 
 .left{
@@ -308,13 +314,19 @@ nav a:active{
 }
 
 .left:hover + figure.slider{ 
- -webkit-animation: 30s slide-left infinite;
+ -webkit-animation: 10s slide-left infinite;
 }
 .right{
   right:0;
+  transition:all 5s;
 }
 
-@-webkit-keyframes slide-left {
+.right:hover + figure.slider{
+-webkit-transform: translateX(100px);
+ /*-webkit-animation: 10s slide-right infinite;*/
+}
+
+@-webkit-keyframes slide-right {
 20% { left: 0%; }
 25% { left: -100%; }
 45% { left: -100%; }
@@ -325,29 +337,47 @@ nav a:active{
 100% { left: -400%; }
 }
 
+@-webkit-keyframes slide-left {
+20% { right: 0%; }
+25% { right: -100%; }
+45% { right: -100%; }
+50% { right: -200%; }
+70% { right: -200%; }
+75% { right: -300%; }
+95% { right: -300%; }
+100% { right: -400%; }
+}
+
 div#captioned-gallery { 
   height: 10em;
-  width: 10em; overflow: hidden; 
+  width: 90%; 
+  margin: 0 auto;
+  overflow: hidden; 
   position: relative;
 }
 figure.slider { 
   position: relative; 
-  width: 500%;
+  height: 100%;
+  width: 120%;
+  margin: 0 auto;
   font-size: 0; 
+  top: 0;
 }
 figure.slider figure { 
-  width: 20%; 
-  height: auto;
+  width: 15%; 
+  height: 100%;
   display: inline-block;  position: inherit; 
+  top:0;
 }
 figure.slider img { 
-	width: 100%; 
-	height: auto;
+	width: auto; 
+	height: 98%;
+	margin: 1%;
 	top: 0; }
 figure.slider figure figcaption { 
   position: absolute; bottom: 0;
   background: rgba(0,0,0,0.4);
-  color: #fff; width: 100%;
+  color: #fff; width: 50%;
   font-size: 2rem; padding: .6rem; 
 }
 
