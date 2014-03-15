@@ -37,8 +37,14 @@ article{
 }
 
 footer{
-	padding: 15px;
-	clear: left;
+	background: rgba(255, 235, 209, .5);
+	color: #5C4C38;
+	font-size: .75em;
+	line-height: 1.25em;
+	/*text-indent: 18.6666666667%;*/
+	text-align: right;
+	position: absolute;
+	bottom: 0;
 }
 
 img{
@@ -54,7 +60,7 @@ img{
 
 /* Set Your Own Margin & Padding */
 h2, h3, p {
-	margin: 10px;
+	margin: 1%;
 }
 
 
