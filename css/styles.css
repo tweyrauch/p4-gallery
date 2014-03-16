@@ -19,13 +19,16 @@ header{
 	margin: 0;
 }
 
+article{
+	margin-bottom: 3%;
+}
+
 section {
 	padding: 1.5%;
 }
 
 .span_10{
 	border-left: 1px dashed #8EA4B0;
-
 }
 
 
@@ -197,6 +200,7 @@ div.markers li{
    border-bottom: .93em solid transparent;
 }
 
+#web:target,
 #drawings:target,
 #photo:target{
 background: #FFEBD1;
@@ -217,13 +221,14 @@ background: #FFEBD1;
     display: block;
 }
 .lb-album li > a{
-	background: url("../img/thumbs/sprite1.jpg") no-repeat;
+	background: url("../img/thumbs/sprite.jpg") no-repeat;
     width: 100px;
     height: 100px;
     position: relative;
     border: 5px solid #3E5866;
 }
 
+/*	PHOTOGRAPHS*/
 .photos li:nth-child(1) a {
    background-position: 0 0;
 }
@@ -244,8 +249,22 @@ background: #FFEBD1;
    background-position: -400px 0;
 }
 
+/*	DRAWINGS	*/
 .draw li:nth-child(1) a {
    background-position: 0 -100px;
+}
+
+/*	DESIGN ITERATIONS*/
+.designs li:nth-child(1) a {
+   background-position: 0 -200px;
+}
+
+.designs li:nth-child(2) a {
+   background-position: -100px -200px;
+}
+
+.designs li:nth-child(3) a {
+   background-position: -200px -200px;
 }
 
 /* OVERLAY */
@@ -360,7 +379,7 @@ background: #FFEBD1;
 	position: absolute;
 	overflow: hidden;
 	z-index: 1005;
-	bottom: 0;
+	bottom: 1%;
 	left: 0;
 	float: right;
 }
@@ -379,7 +398,7 @@ background: #FFEBD1;
 
 .gallery li{
 	color: #E4F4FC;
-	float: right;
+	float: left;
 	position: relative;
 	margin: 0;
 	padding: 0 1%;
@@ -387,7 +406,7 @@ background: #FFEBD1;
 }
 
 .lb-overlay ul.gallery a{
-	background: url("../img/thumbs/sprite1.jpg") no-repeat;
+	background: url("../img/thumbs/sprite.jpg") no-repeat;
     width: 100px;
     height: 50px;
     border: 3px solid #3E5866;
@@ -404,6 +423,10 @@ background: #FFEBD1;
 
 .gallery li:nth-child(2) a {
    background-position: 0 -100px;
+}
+
+.gallery li:nth-child(3) a {
+   background-position: 0 -200px;
 }
 
 /*	TARGET	*/
