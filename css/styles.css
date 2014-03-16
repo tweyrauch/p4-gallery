@@ -263,6 +263,14 @@ background: #FFEBD1;
     background:  rgba(62, 88, 102, .8);
 }
 
+.lb-overlay h2{
+	display: inline-block;
+	color: #FFEBD1;
+	position: absolute;
+	top: 0;
+	left: 44%;
+	/*margin: 0 auto;*/
+}
 
 .lb-overlay a.lb-close{
     background: #FFEBD1;
@@ -358,7 +366,7 @@ background: #FFEBD1;
 }
 
 .gallery ul{
-	width: 100%;
+	width: 20%;
 	margin: 0 auto;
 }
 
@@ -371,10 +379,9 @@ background: #FFEBD1;
 
 .gallery li{
 	color: #E4F4FC;
-	float: left;
+	float: right;
 	position: relative;
-/*	right: 30px;
-*/	margin: 0;
+	margin: 0;
 	padding: 0 1%;
 	opacity: .5
 }
