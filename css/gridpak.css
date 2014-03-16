@@ -67,7 +67,7 @@
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 320px) and (max-width: 459px) {
+    @media screen and (min-width: 320px) and (max-width: 465px) {
         
         .col {
             margin-left:0%;
@@ -99,7 +99,7 @@
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 460px) and (max-width: 779px) {
+    @media screen and (max-width: 779px) {
         
         .col {
             margin-left:0%;
