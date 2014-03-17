@@ -344,7 +344,6 @@ background: #FFEBD1;
 	width: 1em;
 	height: 10em;
 	line-height: 8em;
-	text-decoration: none;
 	display: block;
 	border-radius: 5px;
     position: absolute;
@@ -352,6 +351,24 @@ background: #FFEBD1;
     opacity: 0.5;
     text-align: center;
     z-index: 1000;
+}
+
+.top a{
+	background: #FFEBD1;
+	color: #3E5866;
+	font-size: 2em;
+	padding: .5%;
+	position: absolute;
+	bottom: -20%;
+	right: 5%;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-transform:rotate(-90deg);
+	opacity:.5;
+}
+
+.top a:hover{
+	opacity: 1;
 }
 
 .lb-prev:hover, .lb-next:hover{
@@ -378,15 +395,10 @@ background: #FFEBD1;
 .gallery{
 	position: absolute;
 	overflow: hidden;
-	z-index: 1005;
-	bottom: 1%;
-	left: 0;
-	float: right;
-}
-
-.gallery ul{
 	width: 20%;
-	margin: 0 auto;
+	z-index: 1005;
+	bottom: 5%;
+	right: 0;
 }
 
 .gallery h3{
@@ -394,14 +406,13 @@ background: #FFEBD1;
 	margin: 0;
 	padding: 0;
 	opacity: .75;
+	float: left;
 }
 
 .gallery li{
 	color: #E4F4FC;
-	float: left;
 	position: relative;
-	margin: 0;
-	padding: 0 1%;
+	margin: 2%;
 	opacity: .5
 }
 
@@ -417,16 +428,16 @@ background: #FFEBD1;
 	opacity: 1;
 }
 
-.gallery li:nth-child(1) a {
-   background-position: 0 0;
-}
-
 .gallery li:nth-child(2) a {
-   background-position: 0 -100px;
+   background-position: 0 -200px;
 }
 
 .gallery li:nth-child(3) a {
-   background-position: 0 -200px;
+   background-position: 0 -100px;
+}
+
+.gallery li:nth-child(4) a {
+   background-position: 0 0;
 }
 
 /*	TARGET	*/
