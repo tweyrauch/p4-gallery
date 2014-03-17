@@ -1,7 +1,5 @@
-p4-gallery
+Sources
 ==========
-Sources:
-
 Description:Codrops CSS3 Lightbox URL:http://tympanus.net/codrops/2011/12/26/css3-lightbox/
 
 Description:GridPak URL:http://gridpak.com/about/
