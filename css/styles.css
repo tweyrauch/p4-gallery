@@ -471,17 +471,19 @@ background: #FFEBD1;
 }
 
 .lb-overlay:target img{
-    -webkit-animation: fadeInScale 1.2s ease-in-out;
+    -webkit-animation: fadeInScale 1.5s ease-in-out;
 }
 
 
 @-webkit-keyframes fadeInScale {
   0% { 
   	/*-webkit-transform:translateX(50%);*/
+  	-webkit-transform:rotateX(90deg);
   	opacity: 0;
    }
   100% { 
   	/*-webkit-transfrom:translateX(0);*/
+  	-webkit-transform:rotateX(0deg);
   	opacity: 1;
    }
 }
